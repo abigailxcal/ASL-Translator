@@ -5,6 +5,8 @@
 - **Matthew Manning**
 - **Rane Dy**
 
+[Watch Demo on YouTube Here](https://youtube.com/shorts/XmJruW_QsFw?feature=share)
+
 ## 📖 Purpose  
 
 The ASL Alphabet Detection project aims to improve accessibility and communication for individuals in the Deaf and Hard of Hearing community by enabling real-time recognition of American Sign Language (ASL) alphabets using computer vision techniques, as well as apending these letters to create sentences.
