@@ -68,7 +68,7 @@ ctk.set_default_color_theme("blue")
 # Create the main window
 window = ctk.CTk()
 window.geometry('1080x1080')
-window.title("HAND SIGNS")
+window.title("BRONCO HACKATHON")
 prev = ""
 
 # Function to open the camera and perform hand gesture recognition
