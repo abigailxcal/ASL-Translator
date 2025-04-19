@@ -14,7 +14,7 @@ from tensorflow.keras.layers import Dense, Dropout
 # ——— CONFIG ———
 CSV_PATH       = "training.csv"
 MODEL_DIR      = os.path.join("model", "keypoint_classifier")
-MODEL_FILENAME = "asl_model.keras"      # adjust if your KeyPointClassifier expects a different name
+MODEL_FILENAME = "asl_model.keras"      
 LABEL_FILENAME = "label.csv"
 
 os.makedirs(MODEL_DIR, exist_ok=True)
