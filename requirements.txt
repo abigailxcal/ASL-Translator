@@ -1,7 +1,9 @@
-customtkinter
-csv
-tkinter
-opencv-python
-Pillow
-mediapipe
-model
+customtkinter==5.2.2
+#opencv-python==4.11.0.86
+tensorflow==2.19.0
+tensorflow-macos
+pillow==11.2.1
+mediapipe==0.10.21
+ml_dtypes==0.5.1
+
+

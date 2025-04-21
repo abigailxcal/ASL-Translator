@@ -20,6 +20,7 @@ MODEL_PATH = os.path.join(MODEL_DIR, MODEL_FILENAME)
 LABEL_PATH = os.path.join(MODEL_DIR, LABEL_FILENAME)
 
 # ——— preprocessing ———
+# this 
 def pre_process_landmark(landmark_list):
     temp = copy.deepcopy(landmark_list)
     base_x, base_y = temp[0][0], temp[0][1]
@@ -34,7 +35,11 @@ def pre_process_landmark(landmark_list):
 #  64 cols: [label, x0,y0,z0, x1,y1,z1, … x20,y20,z20]
 df = pd.read_csv(CSV_PATH, header=None)
 y_raw = df.iloc[:, 0].astype(int).values           #0–25
+
+# for reading in the raw data
 kp_raw = df.iloc[:, 1:].values.astype(np.float32)  #shape (,63)
+
+# the raw data comes from images of hands signing the alphabet and 
 
 
 #  drop z,normalize

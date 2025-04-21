@@ -1,13 +1,21 @@
-import customtkinter as ctk
 import csv
-import tkinter as tk
-import cv2
-from PIL import Image, ImageTk
-import mediapipe as mp
-from model import KeyPointClassifier
-import itertools
 import copy
-from datetime import datetime
+import itertools
+from model import KeyPointClassifier
+
+# gui packages
+import customtkinter as ctk
+from PIL import Image, ImageTk
+
+# webcam and image processing
+import cv2
+import mediapipe as mp
+
+#for the mediapipe bug for M1 computers. i don't know if this actually does something 
+import os
+os.environ["MEDIA_PIPE_DISABLE_GPU"] = "1"
+
+
 
 # Function to calculate the landmark points from an image
 def calc_landmark_list(image, landmarks):
