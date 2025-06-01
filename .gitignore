@@ -1,0 +1,7 @@
+model/__pycache__
+model/keypoint_classifier/__pycache__
+model/keypoint_classifier/Test_Alphabet
+*.keras
+*.hdf5
+*.tflite
+

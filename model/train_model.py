@@ -10,7 +10,7 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
 
-CSV_PATH       = "/content/training.csv"
+CSV_PATH       = "training.csv"
 MODEL_DIR      = os.path.join("model", "keypoint_classifier")
 MODEL_FILENAME = "asl_model.keras"      
 LABEL_FILENAME = "label.csv"
@@ -33,7 +33,7 @@ def pre_process_landmark(landmark_list):
 
 
 #  64 cols: [label, x0,y0,z0, x1,y1,z1, … x20,y20,z20]
-df = pd.read_csv(CSV_PATH, header=None)
+df = pd.read_csv("/Users/abigailcalderon/GitHub/ASL-Translator/model/training.csv", header=None)
 y_raw = df.iloc[:, 0].astype(int).values           #0–25
 
 # for reading in the raw data
